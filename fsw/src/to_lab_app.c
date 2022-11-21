@@ -378,7 +378,7 @@ int32 TO_LAB_ResetCounters(const TO_LAB_ResetCountersCmd_t *data)
 int32 TO_LAB_SendDataTypes(const TO_LAB_SendDataTypesCmd_t *data)
 {
     int16 i;
-    char  string_variable[10] = "ABCDEFGHIJ";
+    char  string_variable[10] = "ABCDEFGHI";
 
     /* initialize data types packet */
     CFE_MSG_Init(CFE_MSG_PTR(TO_LAB_Global.DataTypesTlm.TelemetryHeader), CFE_SB_ValueToMsgId(TO_LAB_DATA_TYPES_MID),
