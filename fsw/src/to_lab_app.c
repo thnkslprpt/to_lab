@@ -214,7 +214,7 @@ CFE_Status_t TO_LAB_init(void)
                           TO_LAB_VERSION, TO_LAB_BUILD_CODENAME, TO_LAB_LAST_OFFICIAL);
 
     CFE_EVS_SendEvent(TO_LAB_INIT_INF_EID, CFE_EVS_EventType_INFORMATION,
-                      "TO  Initialized.%s, Awaiting enable command.", VersionString);
+                      "TO Lab Initialized.%s, Awaiting enable command.", VersionString);
 
     return CFE_SUCCESS;
 }
